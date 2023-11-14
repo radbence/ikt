@@ -1,0 +1,93 @@
+
+
+body {
+    font-family: 'Ubuntu';
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-tables {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 1em;
+    min-width: 480px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.20);
+}
+
+.content-tables th,
+.content-tables td {
+    padding: 12px 15px;
+}
+
+.content-tables th {
+    background-color: #009879;
+    color: white;
+    text-align: left;
+    font-weight: bold;
+}
+
+.content-tables tbody tr {
+    border-bottom: 1px solid #ddd;
+}
+
+.content-tables tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+#cim {
+    text-align: left;
+}
+
+.navbar {
+    background-color: transparent;
+    overflow: hidden;
+  }
+  
+  .navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-end;
+  }
+  
+  .navbar li {
+    float: left;
+  }
+  
+  .navbar a {
+    display: block;
+    color: #000;
+    text-align: center;
+    padding: 14px 25px;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  .navbar a:hover {
+    background-color: transparent;
+    color: rgb(56, 56, 56);
+  }
+  
+  .navbar a:hover::after {
+    transform: scaleX(1); 
+  }
+  
+  .navbar a::after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 3px;
+    width: 0;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease;
+  }
+  
+  .navbar a:hover::after {
+    width: 100%;
+    background: rgb(55, 182, 129);
+  }
+
+
+
+
