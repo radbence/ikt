@@ -5,8 +5,7 @@
     <title>Radácsi Bence</title>
 </head>
 <body>
-    <h1>Radácsi Bence</h1>
-    <p>IKT házi</p>
+    <h1>Pizza rendelés</h1>
 
     <form action="">
 
@@ -14,44 +13,28 @@
             <legend>Számlázási adatok</legend>
             <input type="text" minlength="6" required placeholder="Név"><br>
             <input type="email" placeholder="Email" required><br>
-            <input type="date"  placeholder="Születési dátum" required><br>
             <input type="text" placeholder="Cím"><br>
             <input type="text" placeholder="Város"><br>
-            <input type="text" placeholder="Irányítószám"><br>
-        </fieldset>
+            <input type="text" placeholder="Irányítószám"><br><br>
+            <input type="radio">Számlázási adatok megegyeznek a szállítási adatokkal<br>
+        </fieldset><br>
 
         <fieldset>
-            <legend>Szállítási adatok</legend>
-            <input type="text" placeholder="Cím"><br>
-            <input type="text" placeholder="Város"><br>
-            <input type="text" placeholder="Irányítószám"><br>
+            <legend>Pizza mérete</legend>
+            <input type="radio"> Kicsi <input type="radio"> Közepes <input type="radio"> Nagy
         </fieldset>
-
+        
         <fieldset>
-            <legend>Fizetési adatok</legend>
-            <input type="text" placeholder="Kártyaszám"><br>
-            <input type="text" placeholder="Lejárati dátum"><br>
-            <input type="text" placeholder="CVC"><br>
-        </fieldset>
+            <legend>Összesítés</legend>
+            <input type="radio"> Lehető leghamarabb kérem a rendelést <br>
+            <input type="radio"> Időzített rendelés. Rendelés időpontja:
+            <input type="time">
+        </fieldset><br><br>
 
-        <fieldset>
-            <legend>Egyéb adatok</legend>
-            <input type="text" placeholder="Felhasználónév"><br>
-            <input type="password" placeholder="Jelszó"><br>
-            <input type="tel" placeholder="Telefonszám"><br>
-            <input type="url" placeholder="Weboldal"><br>
-            <input type="color" placeholder="Kedvenc szín"><br>
-            <input type="range" placeholder="Ár tartomány"><br>
-            <input type="file" placeholder="Fájl feltöltése"><br>
-            <label>Elfogadom az ÁSZF-et</label>
-            <input type="checkbox"><br>
-            <label>Nem</label>
-            <input type="radio"><br>
-            <label>Igen</label>
-            <input type="radio"><br>
-            <input type="submit"><br>
-            <input type="reset">
-        </fieldset>
+        <input type="submit">
+        <input type="reset">
+
+
 
     </form>
 </body>
