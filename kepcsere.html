@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Képcsere</title>
+    <style>
+        img {
+            height: 200px;
+            width: 200px;
+            
+        }
+        #nigga {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <img src="images.jfif" id="nigga">
+    <img src="images (1).jfif" id="white">
+<br><br>
+    <input type="button" value="nigga" onclick="nigga()">
+    <input type="button" value="white" onclick="white()">
+
+    <script>
+function nigga() {
+    document.getElementById("nigga").style.display = "block";
+    document.getElementById("white").style.display = "none";
+}
+
+function white() {
+    document.getElementById("white").style.display = "block";
+    document.getElementById("nigga").style.display = "none";
+}
+    </script>
+</body>
+</html>
