@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+    <title>Urlap</title>
+</head>
+
+<body>
+    <div class="container">
+        <form action="javascript:felir()">
+            <h1 class="title">Iratkozz fel!</h1><br>
+            <h1 class="subtitle">Neved:</h1>
+            <input class="input" type="text" placeholder="Kirinó Bercel" id="name_input">
+            <br><br>
+            <h1 class="subtitle">Email címed:</h1>
+            <input class="input" type="email" placeholder="pelda@gmail.com" id="email">
+            <br><br>
+            <p> <input type="checkbox" class="checkbox" id="aszf" checked> <a href="">Á.SZ.F</a> elfogadása</p>
+            <p> <input type="checkbox" class="checkbox" id="" checked> Feliratkozom a hírlevélre</p>
+            <br>
+            <input class="button is-link" type="submit" value="OK">
+        </form>
+    </div>
+
+
+    <script>
+        function felir() {
+            if (aszf.checked) {
+                localStorage.setItem("email", email.value);
+                localStorage.setItem("nev", name_input.value);
+            }
+            else {
+                alert("Fogadd el!");
+            }
+        }
+    </script>
+</body>
+
+</html>
